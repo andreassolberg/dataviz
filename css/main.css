@@ -20,12 +20,17 @@ html {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
-body div {
-  padding: 2em
+body div#nav {
+  padding: 1em 3em
 }
 
 body div#header, body div#footer  {
-  text-align: center
+  text-align: center;
+  padding: 1em 5em
+}
+body div#header a, body div#footer a {
+
+  color: #e9eb87;
 }
 body div#main {
   background: #e9eb87;

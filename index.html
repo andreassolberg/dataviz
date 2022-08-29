@@ -12,8 +12,8 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <!-- link rel="manifest" href="site.webmanifest" -->
+  <!-- link rel="apple-touch-icon" href="icon.png" -->
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
@@ -30,38 +30,39 @@
 
   <div id="main">
     
-    <div id="observablehq-viewof-type-08054eba"></div>
-    <div id="observablehq-viewof-kjonn-08054eba"></div>
-    <div id="observablehq-viewof-n-08054eba"></div>
-    
-    <div id="observablehq-chart-08054eba"></div>
-
-    <p>Credit: <a href="https://observablehq.com/@andreassolberg/top-12-uh-institusjoner">Top 12 UH institusjoner by Andreas Åkre Solberg</a></p>
+    <div id="nav">
+      <div id="observablehq-viewof-type-64da7889"></div>
+      <div id="observablehq-viewof-kjonn-64da7889"></div>
+      <div id="observablehq-viewof-n-64da7889"></div>
+    </div>
+    <div id="observablehq-chart-64da7889"></div>
     
     <script type="module">
     import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
     import define from "https://api.observablehq.com/@andreassolberg/top-12-uh-institusjoner.js?v=3";
     new Runtime().module(define, name => {
-      if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-08054eba"));
-      if (name === "viewof type") return new Inspector(document.querySelector("#observablehq-viewof-type-08054eba"));
-      if (name === "viewof kjonn") return new Inspector(document.querySelector("#observablehq-viewof-kjonn-08054eba"));
-      if (name === "viewof n") return new Inspector(document.querySelector("#observablehq-viewof-n-08054eba"));
-      return ["studenter","ystudenter","data"].includes(name);
+      if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-64da7889"));
+      if (name === "viewof type") return new Inspector(document.querySelector("#observablehq-viewof-type-64da7889"));
+      if (name === "viewof kjonn") return new Inspector(document.querySelector("#observablehq-viewof-kjonn-64da7889"));
+      if (name === "viewof n") return new Inspector(document.querySelector("#observablehq-viewof-n-64da7889"));
+      return ["updater","studenter","ystudenter","data"].includes(name);
     });
     </script>
   </div>
 
   <div id="footer">
-    <p>Denne datavisualiseringen er laget av &copy; Andreas Åkre Solberg mer eller mindre fra bunnen av med D3. Dataene er hentet fra <a href="https://dbh.hkdir.no/dbhapiklient/s">HK-dirs DBA API</a></p>
+    <p>Denne datavisualiseringen er laget av <a href="https://observablehq.com/@andreassolberg">Andreas Åkre Solberg</a> mer eller mindre fra bunnen av med D3. Dataene er hentet fra <a href="https://dbh.hkdir.no/dbhapiklient/s">HK-dirs DBA API</a>. Dataene hentes ut i sanntid via nettleseren via XHR forespørsler.
+    Ta gjerne en titt <a href="https://observablehq.com/@andreassolberg/top-12-uh-institusjoner"></a>på visualiseringen og gi den en like på Observablehq</a>. Har forberedt <a href="https://observablehq.com/@andreassolberg/top-n-time-series"></a>Top-N Serie visualiseringen som et gjenbrukbart bibliotek</a>. Koden for å lage <a href="https://observablehq.com/@andreassolberg/color-categories-with-groups">fargepalettet også tilgjengelig for gjenbruk</a>.</p>
+
   </div>
 
 
   <!-- Add your site or application content here -->
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
+ <!-- <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  
+  -->
 </body>
 
 </html>
