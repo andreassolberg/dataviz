@@ -11,6 +11,17 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+   @media screen and (min-width: 600px) {
+    .mobileOnly {
+      visibility: hidden;
+      clear: both;
+      float: left;
+      margin: 10px auto 5px 20px;
+      width: 28%;
+      display: none;
+    }
+  }
+
 html {
   color: #222;
   font-size: 1em;
