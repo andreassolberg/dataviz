@@ -21,7 +21,14 @@
       display: none;
     }
   }
+  svg g text {
+    pointer-events: none;
+  }
+  svg {
+    cursor: pointer
+  }
 
+  
 html {
   color: #222;
   font-size: 1em;
@@ -97,6 +104,7 @@ svg,
 video {
   vertical-align: middle;
 }
+
 
 /*
  * Remove default fieldset styles.
